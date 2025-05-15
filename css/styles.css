@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   font-weight: 700;
   font-size: 1.25rem;
+  border-radius: 50px;
 }
 
 .logo-text {
@@ -373,7 +374,7 @@ section {
 
 .project-image {
   aspect-ratio: 16 / 9;
-  background-color: #0c0c0c;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
