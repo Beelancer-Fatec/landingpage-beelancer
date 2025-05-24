@@ -14,6 +14,7 @@ body {
   color: #fff;
   line-height: 1.6;
   letter-spacing: 0.01em;
+  width: 100%;
 }
 
 .container {
@@ -245,6 +246,7 @@ section {
 /* About Section */
 .about {
   background-color: #000;
+  width: 100%;
 }
 
 .about-content {
