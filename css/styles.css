@@ -1,5 +1,4 @@
-* Base Styles */
-* {
+* Base Styles */ * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,7 +17,6 @@ body {
 }
 
 .container {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -35,7 +33,12 @@ img {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
 }
 
@@ -171,11 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero {
   position: relative;
-  padding-top: 7rem;
-  padding-bottom: 5rem;
-  min-height: 100vh;
   display: flex;
-  align-items: center;
 }
 
 .hero::before {
@@ -196,12 +195,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   text-align: center;
   z-index: 1;
-
-  height: 100vh;
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5em;
@@ -415,6 +412,7 @@ section {
 
 .project-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -549,11 +547,11 @@ section {
   .hero-title {
     font-size: 4.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.25rem;
   }
-  
+
   .cards-grid,
   .contact-info {
     grid-template-columns: repeat(2, 1fr);
@@ -566,41 +564,41 @@ section {
     align-items: center;
     gap: 2rem;
   }
-  
+
   .menu-toggle {
     display: none;
   }
-  
+
   .hero-title {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
-  
+
   .section-title {
     font-size: 2.5rem;
   }
-  
+
   .team-card {
     flex-direction: row;
   }
-  
+
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .project-item {
     flex-direction: row;
     align-items: center;
   }
-  
+
   .project-item:nth-child(even) {
     flex-direction: row-reverse;
   }
-  
+
   .project-image,
   .project-content {
     width: 50%;
   }
-  
+
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
@@ -611,7 +609,25 @@ section {
   .hero-title {
     font-size: 6rem;
   }
-  
+
+  .hero {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-container {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    height: 100vh;
+  }
+
+
   .cards-grid {
     grid-template-columns: repeat(3, 1fr);
   }
